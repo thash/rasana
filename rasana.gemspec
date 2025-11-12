@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'bundler', '~> 1.3'
+  spec.add_dependency 'bundler', '>= 2.2.33'
   spec.add_dependency 'rake'
   spec.add_dependency 'faraday', '~> 0.8.7'
   spec.add_dependency 'faraday_middleware', '~> 0.9.0'
@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'hashie'
 
   # dev
+  spec.add_development_dependency 'bundler', '>= 2.2.33'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rubocop'
 end
